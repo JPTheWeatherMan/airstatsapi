@@ -4,7 +4,7 @@
 
 Authorization is sent in headers with the key of 'apikey'. While the front end is under construction you can use this public key to preform get requests
 
-''
+`d13ceb09-e49b-4ff4-bb7b-b4fd9d48b1e2`
 
 ## Routes
 `GET http://airstats.app/api/industry/:type`

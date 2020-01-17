@@ -25,7 +25,7 @@ const loadMiddleware = () => {
   // Cross origin resource sharing middleware
   app.use(
     cors({
-      origin: ['http://airstats.app'],
+      origin: ['http://localhost:3000', 'http://airstats.app'],
       methods: ['GET', 'POST'],
       allowedHeaders: ['Content-Type', 'Authorization']
     })

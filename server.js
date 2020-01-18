@@ -27,7 +27,7 @@ const loadMiddleware = () => {
     cors({
       origin: ['http://localhost:3000', 'http://airstats.app'],
       methods: ['GET', 'POST'],
-      allowedHeaders: ['Content-Type', 'Authorization']
+      allowedHeaders: ['Content-Type', 'Authorization', 'Access-Control-Allow-Origin']
     })
   );
 
@@ -40,7 +40,7 @@ const loadMiddleware = () => {
   // API router
   app.use('/api', apiRouter);
 
-  app.use('/', newUserRoute)
+  app.use('/user', newUserRoute)
 
   console.log('Middleware Loaded');
 };

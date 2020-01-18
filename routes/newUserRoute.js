@@ -8,9 +8,8 @@ newUserRoute.use(bodyParser.urlencoded({
 }));
 
 newUserRoute.post('/', function (req, res) {
-	console.log(req.body)
-  saveNewUser(req.body.email)
-  res.send('new user made')
+  const savedUser = saveNewUser(req.body.email)
+  res.status(201).send(savedUser)
 })
 
 module.exports = newUserRoute

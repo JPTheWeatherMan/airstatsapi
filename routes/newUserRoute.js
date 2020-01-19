@@ -1,5 +1,4 @@
 const express = require('express')
-const saveNewUser = require('../utils/saveNewUser')
 const uuidv4 = require('uuid/v4')
 const User = require('../schemas/User')
 const bodyParser = require('body-parser')

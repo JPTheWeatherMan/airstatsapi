@@ -2,7 +2,6 @@ const express = require("express");
 const aircraft = require("../schemas/Aircraft");
 const manufacturers = require("../schemas/Manufacturer");
 const auth = require("../middlewares/Auth");
-const saveNewUser = require('../utils/saveNewUser')
 
 const apiRouter = express.Router();
 apiRouter.use(auth);
